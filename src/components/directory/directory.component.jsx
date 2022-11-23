@@ -1,10 +1,10 @@
 import MenuItem from "../menu-item/menu-item.components";
 import "./directory.styles.scss";
 
-const Directory = ({ menus }) => {
+const Directory = ({ menu }) => {
   return (
     <div className="menu-container">
-      {menus.map((menu) => (
+      {menu.map((menu) => (
         <MenuItem key={menu.id} menu={menu} />
       ))}
     </div>

@@ -1,10 +1,11 @@
 import Directory from "./components/directory/directory.component";
 
 function App() {
-  const menu = [
+  const menus = [
     {
       id: 1,
       title: "strawberry-brownie",
+      price: "£10",
       imageUrl:
         "https://images.pexels.com/photos/9652807/pexels-photo-9652807.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     },
@@ -38,7 +39,7 @@ function App() {
     },
   ];
 
-  return <Directory menus={menu} />;
+  return <Directory menu={menus} />;
 }
 
 export default App;
