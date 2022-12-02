@@ -1,4 +1,5 @@
 import Directory from "../../components/directory/directory.component";
+import { Outlet } from "react-router-dom";
 
 const Home = () => {
   const menus = [
@@ -39,7 +40,12 @@ const Home = () => {
     },
   ];
 
-  return <Directory menu={menus} />;
+  return (
+    <div>
+      <Directory menu={menus} />
+      <Outlet />
+    </div>
+  );
 };
 
 export default Home;
